@@ -1,0 +1,3 @@
+ ./john --wordlist=wordlist.lst --format=ripemd-160 flag.txt
+
+si colocamos el codigo que nos proporcionaron en cyber chef y le damos la opcion de analizar nos va a dar unos valores que comparando con los que da jhon podemos ir descartando asta obtener 2 cualquiera de los dos colocando el "--format= " y uno de los que obtenemos nos va a dar la palabra  que buscamos que seria haking

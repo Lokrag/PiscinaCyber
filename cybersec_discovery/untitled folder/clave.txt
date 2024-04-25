@@ -1,0 +1,11 @@
+'or'1'='1
+
+
+
+
+query = "SELECT * FROM T_usuarios WHERE nombre = '' or '1' = '1' and password = '' or '1' = '1';
+Con esto estamos diciéndole a la BBDD que queremos que nos devuelva todos los usuarios cuyo nombre sea igual a '', es decir, a vacío, esta sentencia nunca ocurrirá porque no existen usuarios con nombre vacío en la BBDD. La siguiente sentencia "or '1'='1', está anulando a la sentencia anterior gracias al operador "or", y dando el poder a la siguiente afirmación, que está indicando una sentencia que se va a cumplir siempre, que 1 es igual a 1. Lo mismo ocurre con la password.
+
+
+Fuente
+https://www.flu-project.com/2011/05/inyecciones-sql-que-son-como-funcionan_5.html#:~:text=La%20siguiente%20sentencia%20%22or%20'1,1%20es%20igual%20a%201.
